@@ -1,0 +1,7 @@
+I added the new lab as `bootcamp/labs/lab6`, a Spring Boot "Hello World" GET API. I couldn't build or run it because Java and Maven aren't installed here. It follows the same pom and Spring Boot setup as `lab4-server`, so it should build with `mvn install` from `bootcamp/`, but that is untested.
+
+- **Code:** `HelloController` has two endpoints, `GET /hello` returning `Hello, World!` and `GET /hello/{name}` returning `Hello, <name>!`. `SpringBootServer` starts the app on port 8080, set in `application.yml`.
+- **Docs:** `lab6/README.md` has the same Objective/Step layout as the other labs. It covers building, running from an IDE or with `java -jar labs/lab6/lab6-server/target/bootcamp-lab6-server.jar`, `curl` examples, and an "extend it" exercise.
+- **Registration:** I added `<module>lab6</module>` to `bootcamp/labs/pom.xml`. I also added a Lab 6 section to `bootcamp/labs/README.md` and changed its count from "4 labs" to "6 labs".
+- **Dependencies:** Like every bootcamp module, it inherits `hazelcast-enterprise` from the parent pom, so the build needs the private Hazelcast repository. The lab itself doesn't use Hazelcast.
+- **Lab 5:** It exists but has no section in `labs/README.md`. I left that alone as unrelated, so the README now jumps from Lab 4 to Lab 6.

@@ -1,6 +1,6 @@
 # Bootcamp labs
 
-4 labs showing some features
+6 labs showing some features
 
 ## Lab 1
 Uses Hazelcast only with server JVMs, known as "_embedded_" mode. Your application contains the Hazelcast cluster.
@@ -31,6 +31,11 @@ A client-server example using Spring Data for Hazelcast.
 The server uses Spring Boot to create a Hazelcast for minimal code.
 
 The client is Spring, a Spring @Repository is used to retrieve data, much the same as any other Spring @Repository.
+
+## Lab 6
+A "Hello World" for a simple GET REST API, using Spring Boot.
+
+No Hazelcast here, just the smallest REST service, a starting point for exposing data over HTTP.
 
 ## NOTE 1
 Maven builds executable Jar files, so you need to run as far as the _package_ phase. So try "*mvn install*".
